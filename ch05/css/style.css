@@ -1,0 +1,10 @@
+@import url("header.css");
+@import url("main.css");
+@import url("footer.css");
+
+
+*{              /*모든 파일에 적용*/
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+}

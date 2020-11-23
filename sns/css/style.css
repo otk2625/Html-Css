@@ -1,0 +1,120 @@
+*{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+}
+body{
+                padding:20px 10px 0 10px ;
+                
+                
+}
+.header{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                margin-bottom: 50px;
+}
+
+.header_s_title{
+                position: relative;
+                bottom: 50px;
+                font-size: 14px;
+                color: gray;
+}
+.header_s_title2{
+                font-size: 14px;
+                color: gray;
+}
+.header .icon{
+                display: flex;
+                justify-content: space-around;
+                margin-top: 19px ;
+                
+}
+.header .icon button{
+                background-color: white;
+                border: none;
+                margin-right: 5px;
+                cursor: pointer;
+}
+.main{
+                height: 470px;
+}
+.main_img{
+                
+                width: 100%;
+                height: 100%;
+}
+.main_img_img{
+                
+               border-radius: 7px;
+                width: 100%;
+              height: 200px;
+                
+}
+.round{
+                background-color: white;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 96%;
+                cursor: pointer;
+}
+.mertial{
+                background-image: url("/sns/images/main.jpg");
+                border-radius: 10px;
+                width: 100%;
+                padding: 15px;
+                justify-content: right;
+              height: 350px;
+}
+.emoti{
+                position: relative;
+                left: 100px;
+}
+.mainform{
+                position: relative;
+                bottom: 80px;
+                background-color: white;
+                left: 70px;
+                width: 90%;
+                height: 150px;
+                padding: 20px;
+                border: 1px solid gray;
+                border-radius: 35px;
+                box-shadow: 0 0 8px 0 rgb(0, 0, 0);
+}
+.mainform_header{
+                font-weight: 1000;
+                font-size: 20px;
+}
+.abc{
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+                margin-top: 10px;
+}
+.sec2{
+  display: flex;
+  justify-content: space-around;
+  border-radius: 7%;
+}
+.sec2 img{
+  width: 300px;
+  height: 150px;   border-radius: 7%;
+}
+.sec2 .div1{
+  position: relative;
+  border-radius: 7%;
+}
+.abc1{
+                display: flex;
+                justify-items: center;
+                align-items: center;
+                text-align: center;
+                
+}

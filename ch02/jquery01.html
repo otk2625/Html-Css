@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<head>
+                <meta charset="UTF-8">
+                <title>Jquery 예제1</title>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <style>
+                                div{
+                                                border: 1px solid black;
+                                                height: 200px;
+                                }
+                </style>
+</head>
+<body>
+                <div class="box1">
+                                
+                </div>
+                <div id="box2">
+
+                </div>
+                <button onclick="show()">보이기</button>
+                <script>
+                                // ready() 함수는 그림이 다 그려지면
+                                //ready()의 인수에는 실행될 함수가 들어가야함
+                                $(document).ready(function(){
+                                                alert("그림이 다 그려짐");
+                                });
+                                //선택자 .(class), #(id), div(태그명)
+                            $(".box1").hide();
+                            $("#box2").hide();
+                            
+                            function show(){
+                                $("div").show();
+                            }
+                </script>
+
+              
+</body>
+</html>

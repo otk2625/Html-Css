@@ -1,0 +1,32 @@
+.login{
+                margin: 50px auto; /*가운데*/
+                width: 60%;
+                
+                display: flex;
+                justify-content: center;
+                text-align: center;
+}
+.login__box{
+                background-color: white;
+                width: 350px;
+                border: 2px solid rgb(235, 235, 235);
+                padding: 20px;
+                margin-top: 15px;
+                margin-left: 20px;
+}
+.login__form input{
+                height: 40px;
+                width: 270px;
+                margin-bottom: 5px;
+                border: 1px solid rgb(235,235,235);
+                border-radius: 7px;
+                background-color: rgb(255 , 255, 255);
+}
+.login__app{
+                display: flex;
+                justify-content: center;
+}
+.login__app img {
+                width: 146px;
+                height: 40px;
+}

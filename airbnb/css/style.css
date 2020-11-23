@@ -1,0 +1,126 @@
+*{              /*기본 셜계*/ 
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+}
+header{
+                height: 880px;
+               background-image: url(/airbnb/images/background.jpg);
+               
+             
+   
+
+}
+nav{
+                display: flex;
+                justify-content: space-between;
+                
+}
+nav  a{ /*nav 안 a태그만 적용*/
+                text-decoration: none;
+                color: white;
+                display: inline-block;
+                padding: 20px 0;
+                font-size: 15px;
+                font-weight: 700; /*굵기*/
+       
+}
+ul{                                       
+                
+                width: 700px;
+                
+}
+li{
+                display: inline-block;
+               width: 200px;
+                list-style-type: none; /*list * 표시 디자인*/
+                
+
+}
+.nav__logo{
+                margin: 10px;
+}
+.nav__menu{
+                width: 730px;
+}
+.search-form{
+                margin-top: 20px;
+                background-color: white;
+                width: 430px;
+                height: 450px;
+                margin-left: 50px;
+                padding: 40px;
+                border-radius: 7px;
+}
+.btn2 {
+                background-color: #FF5A5F;
+                border: 0; /*테두리 선*/
+                color: white;
+                cursor: pointer; /*커서 올리면 바뀌는이벤트*/
+                font-size: 15px;
+                font-weight: 700;
+                border-radius: 7px; /*버튼 테두리 둥글게*/
+                outline: 0; /*버튼 아웃라인*/
+                height: 45px;
+                width: 70px;
+               
+}
+input{
+                border-right:0px; 
+                border-top:0px; 
+                border-left:0px; 
+                border-bottom:0px;
+               outline: none;
+               font-size: 15px;
+                
+                
+}
+.l-title{
+                margin-top: 15px;
+                font-size: 25px;
+                font-weight: 700;
+                
+}
+.s-title{
+                margin-bottom: 15px;
+}
+.section-first{
+                
+              
+                outline: black;
+                height: 60px;
+               display: flex; 
+                justify-content: space-between;
+                align-items: center; /*가운데 정렬*/
+                justify-content: left;
+                border: 1px solid black;
+                border-radius: 3px;
+
+}
+.section-first > div{
+                align-items: center;
+}
+.asd img{
+                width: 20%;
+                height: 20%;
+}
+.divpadding{
+                padding: 10px;
+}
+.divpadding div img{
+                width: 240px;
+                height: 230px;
+}
+.home-box{
+                display: grid;
+                grid-template-columns:  1fr 1fr 1fr 1fr; /*비율*/
+                grid-gap: 10px;
+                margin: 0 10px;
+}
+.xs-title{
+                font-size: 12px;
+}
+.m-title{
+                font-weight: 500;
+                font-size: 20px;
+}

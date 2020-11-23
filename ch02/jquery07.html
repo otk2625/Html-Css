@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                <meta charset="UTF-8">
+                <title>Document</title>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <style>
+                                #comment-list{
+                                                border: 5px solid black;
+                                                padding: 10px;
+                                }
+
+                                #comment-list > div{
+                                                border:  2px solid red;
+                                                padding: 10px;
+                                }
+                </style>
+</head>
+<body>
+                <div id="comment-list">
+                                <div id="item-1">
+                                                <span id="comment-1">댓글1</span>
+                                                <span id="comment-delete-1" onclick="deleteComment(1)">삭제</span>
+                                </div>
+                                <div id="item-2">
+                                                <span id="comment-2">댓글2</span>
+                                                <span id="comment-delete-2" onclick="deleteComment(2)">삭제</span>
+                                </div>
+                </div>
+                <hr/>
+                <input type="text" id="input-comment"/>
+                <button onclick="addComment()">댓글추가(prepend)</button>
+                <button onclick="addComment1()">댓글추가(append)</button>
+                <button onclick="addComment2()">댓글추가(after)</button>
+                <button onclick="addComment3()">댓글추가(before)</button>
+
+                <script>
+                                var no = 3;
+                                function deleteComment(no){
+                                                $("#item-"+no).remove();
+                                                
+                                }
+                                //(내부) append, (내부)prepend, (외부)after, (외부)before
+                                function addComment(){
+                                                var comment = $("#input-comment").val();
+                                                //변수를  설정하는법
+                                                //(1)백틱 `` ${변수}
+                                                //(2) +연산자로 변수 더하기(결합)
+                                //               var com = `<div id="item-${no}">`;
+                                //               com+=`<span id="comment-${no}">${comment}</span>`
+                                //               com+=`<span id="comment-delete-${no}" onclick="deleteComment(${no})">삭제</span>
+                                //                                 </div>`;
+                                                 $("#comment-list").prepend(
+                                                                ` <div id="item-${no}">
+                                                                                 <span id="comment-${no}">${comment}</span>
+                                                                                 <span id="comment-delete-${no}" onclick="deleteComment(${no})">삭제</span>
+                                                                 </div>`); //백틱 `` ${변수} 
+                                                //$("#comment-list").prepend(com);
+                                                $("#input-comment").val("");
+                                                no = no + 1;
+                                                
+                                }
+                                function addComment1(){
+                                                var comment = $("#input-comment").val();
+                                                $("#comment-list").append("<div>" + comment + "</div>");
+                                }
+                                function addComment2(){
+                                                var comment = $("#input-comment").val();
+                                                $("#comment-list").after("<div>" + comment + "</div>");
+                                }
+                                function addComment3(){
+                                                var comment = $("#input-comment").val();
+                                                $("#comment-list").before("<div>" + comment + "</div>");
+                                }
+
+                               
+                </script>
+</body>
+</body>
+</html>

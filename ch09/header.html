@@ -1,0 +1,83 @@
+<html>
+                <head>
+                                <style>
+                                                *{              /*기본 셜계*/ 
+                                                                padding: 0px;
+                                                                margin: 0px;
+                                                                box-sizing: border-box;
+                                                }
+                                                header{
+                                                                background-color: pink;
+                                                                height: 100px;
+                                                                display: flex;
+                                                                align-items: center; /*가운데 정렬*/
+                                                                justify-content: center;
+                                                                color: white;
+                                                                font-size: 40px;
+                                                                font-weight: 900;
+                                                }
+                                                ul{
+                                                                
+                                                                display: flex;
+                                                                flex-wrap: wrap;
+                                                                justify-content: space-around;
+                                                }
+                                                li{
+                                                              width: 300px;
+                                                                margin-left: 25px;
+                                                                list-style-type: none; /*list * 표시 디자인*/
+                                                                
+
+                                                }
+                                                nav{
+                                                                
+                                                                background-color: orange;
+                                                }
+                                                nav  a{ /*nav 안 a태그만 적용*/
+                                                                text-decoration: none;
+                                                                color: white;
+                                                                display: inline-block;
+                                                                padding: 20px 0;
+                                                                font-size: 20px;
+                                                                font-weight: 700; /*굵기*/
+                                                       
+                                                                
+                                                }
+                                                a:hover{
+                                                                background-color: rgba(255, 166, 0, 0.658);
+                                                }
+                                                
+                                                .dropdown{
+                                                                position: absolute;
+                                                                display: none;
+                                                }
+                                                .submenu{
+                                                                
+                                                                position: relative;
+                                                }
+                                                .submenu > a :hover + .dropdown{
+                                                                display: block;
+                                                }
+                                                
+
+                                </style>
+                </head>
+                <body>
+                                <header>COS</header>
+                                <nav>
+                                                <ul>
+                                                                <li><a href="#">HOME</a></li>
+                                                                <li><a href="#">HTML</a></li>
+                                                                <li><a href="#">CSS</a></li>
+                                                                <li class="submenu">
+                                                                                <a href="#">JavaSript</a>
+                                                                                <div class="dropdown">
+                                                                                                <div>Link 1</div>
+                                                                                                <div>Link 2</div>
+                                                                                                <div>Link 3</div>
+                                                                                </div>
+                                                                </li>
+                                                </ul>
+                                </nav>
+                </body>
+</html>

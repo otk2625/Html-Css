@@ -1,0 +1,19 @@
+*{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+}
+.divimg{
+               
+                right: 20%;
+                width: 80%;
+                height: 730px;  
+                padding-right: 200px;         
+}
+.header__div{
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                width: 1000px;
+                height: 100px;
+}
